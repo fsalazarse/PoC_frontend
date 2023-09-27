@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   .global-button {
+    @apply text-white hover:bg-green-800 py-2 rounded p-3 bg-green-900;
+   }
+}
