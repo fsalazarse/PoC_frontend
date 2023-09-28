@@ -10,7 +10,8 @@
             { nombre: "Recursos humanos", id:"2"},
             { nombre: "Proyectos", id:"3"},
             { nombre: "contabilidad", id:"4"},
-            { nombre: "Tributario", id:"4"},
+            { nombre: "Tributario", id:"5"},
+            { nombre: "Gabriel", id:"6"},
         ]
     })
     
@@ -18,7 +19,7 @@
         pluginsList: [
             { id : "1", nombre: "serbimas", estado: "instalado", IDservice:"1"},
             { id : "2", nombre: "plugin b", estado: "Desinstalado", IDservice:"1" },
-            { id : "3", nombre: "plugin c", estado: "instalado", IDservice:"1" },
+            { id : "3", nombre: "plugin c", estado: "instalado", IDservice:"2" },
             { id : "4", nombre: "plugin d", estado: "instalado", IDservice:"2" },
         ]
     })
@@ -47,9 +48,9 @@
                 </div>
                 <RouterLink
                     class="text-white hover:bg-green-900 w-full flex justify-center py-2"
-                     :to="{name:'home'}"
+                     :to="{name:'instrucciones'}"
                 >
-                    Home 
+                    Instrucciones 
                 </RouterLink>
                 <button class="text-white hover:bg-green-900 w-full py-2 rounded relative group">
                     Administración
@@ -103,6 +104,7 @@
                     <img src="../../../public/usericon.png" alt="" srcset="" style="width: 40px;">
                 </div>
             </div>
+            
 
                 
             <router-view></router-view>

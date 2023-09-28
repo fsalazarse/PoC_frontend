@@ -1,21 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import{} from '../views/admin_plugin/HomeAdminView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+
     {
-      path: '/admin',
+      path: '/home',
       name: 'base',
-      component: () => import('../views/admin_plugin/BaseView.vue'),
+      component: () => import('../views/BaseView.vue'),
       children: [
         {
-          path: 'home',
-          name: 'home',
-          component: () => import('../views/admin_plugin/HomeAdminView.vue')
+          path: 'instrucciones',
+          name: 'instrucciones',
+          component: () => import('../views/InstructionView.vue')
         },
         {
-          path: 'plugins',
+          path: 'admin_plugins',
           name: 'admin-plugins',
           component: () => import('../views/admin_plugin/AdminPluginView.vue')
         },
@@ -27,7 +28,13 @@ const router = createRouter({
         }
         
       ]
-    }
+    },
+
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/auth/LoginView.vue')
+    },
     
     
     

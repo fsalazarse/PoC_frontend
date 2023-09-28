@@ -1,6 +1,6 @@
 <script setup>
     import { ref, reactive ,onMounted } from 'vue'
-    import InstalPlugin from '../../components/installplugin.vue'    
+    import InstalPlugin from '../../components/InstallPlugin.vue'    
 
     const modal = ref(false)
 
@@ -18,6 +18,7 @@
             { nombre: "plugin b", estado: "Desinstalado" },
             { nombre: "plugin c", estado: "instalado" },
             { nombre: "plugin d", estado: "instalado" },
+            
         ]
     })
 
@@ -73,6 +74,6 @@
             v-if="modal"
             @close-modal="closemodal"
         >
-    </InstalPlugin>
+        </InstalPlugin>
     </div>
 </template>
